@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Strike - Shooting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameContainer">
+
+        <div id="hud">
+            <div>❤️ Health: <span id="health">100</span></div>
+            <div>🎯 Score: <span id="score">0</span></div>
+            <div>🌊 Wave: <span id="wave">1</span></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="startScreen">
+            <h1>NEON STRIKE</h1>
+            <p>WASD / Arrow Keys = Move</p>
+            <p>Mouse = Aim</p>
+            <p>Left Click = Shoot</p>
+            <button id="startButton">START GAME</button>
+        </div>
+
+        <div id="gameOverScreen" class="hidden">
+            <h1>GAME OVER</h1>
+            <h2>Score: <span id="finalScore">0</span></h2>
+            <button id="restartButton">PLAY AGAIN</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
